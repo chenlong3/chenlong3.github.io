@@ -1,0 +1,151 @@
+html{
+    font-size: 62.5%;
+}
+*{font-family:"Microsoft YaHei"; }
+@media screen and (max-width: 992px){
+    .margin-content img{visibility:hidden;}
+}
+a{text-decoration: none}
+.margin-not,.nav{margin:0 -15px;}
+ul{margin:0;padding: 0}
+.margin-plus{padding:0 5%}
+.header{color: #42b683}
+.padding-center{padding:1% 0}
+i{
+    background-image: url("img/task10-sprite.png");
+    float: left;
+    overflow: hidden;
+}
+.cat-1,.cat-2,.cat-3{
+    width: 25px;
+    height: 24px;
+    margin: 1%;
+    float: right;
+}
+.cat-1{background-position: -299px 0;}
+.cat-2{background-position: -274px 0;}
+.cat-3{background-position: -249px 0;}
+.content{
+    padding: 5%;
+    background-color: #fafafa;
+}
+.content h4{font-size: 1.8rem}
+.content p{font-size: 1.6rem}
+.cat-4{
+    padding: 5%;
+    margin:15%;
+    color: #26a26f;
+    border-left:dashed 1px #dedede ;
+}
+.cat-4 i{
+    width: 13px;
+    height: 13px;
+    background-position: -324px 0;
+}
+.cat-4 p{
+    color: #bdbdbd;
+    margin: 3% 0;
+}
+.nav{
+    background-color: #42b683;
+    overflow: hidden;
+    padding-right: 5%;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.nav li{list-style-type: none;}
+.nav a{
+    color: white;
+    padding: 2rem 5%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.nav a:visited, .nav a:hover,.nav a:active,.nav a:link{
+    color: white;
+}
+.nav a:hover{border-bottom: solid 5px white;text-align: center;}
+a.on{border-bottom: solid 5px white;}
+.banner{position: relative;overflow: hidden;}
+#leftarrow{position: absolute;left: 5%;top: 40%;}
+#rightarrow{position: absolute;left:90%;top:40%;}
+#imglist{
+    width: 400%;
+    position: relative;
+}
+#imglist img{width: 25%;float: left}
+#buttons{
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+}
+#buttons li{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border:solid 1px white;
+    float: left;
+    list-style-type: none;
+}
+li.on{background-color: white}
+.center{
+    margin:3% auto;
+    text-align: center;
+}
+.center p{color:#bdbdbd;text-align: left;margin: 3% 10%}
+.margin-content{margin:0 0 3%}
+.margin-content p{font-size: 1.4rem}
+.circle{
+    border-radius: 50%;
+    width:3.5rem;
+    height:3.5rem;
+    margin: 0 3%;
+    background-color: white;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    text-align:center;
+    color: #29b078;
+    float: left;
+    border: solid 1px #efeeee;
+    overflow: hidden;
+}
+h4{text-align: center;margin: 5% 0;font-weight: 900;font-size: 1.8rem}
+.box{
+    padding: 5%;
+    margin: 5%;
+    background-color: white;
+}
+.border{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #d6d6d6;
+    text-align: center;
+    padding: 0;
+}
+.shadow{float: left;width: 20%;padding-bottom: 3%;padding-top: 3%}
+.shadow img{
+    box-sizing: border-box
+}
+.shadow:hover{box-shadow: 1px 1px 1px 1px #d6d6d6;}
+.border-content{box-shadow: 1px 1px 1px 1px #d6d6d6;padding: -5% 0}
+.text-color{color:black;margin:0 5% 5%;font-size: 1.8rem;}
+.text-color li{width:20%;margin:1% 0;float: left;text-align: left;font-size: 1.4rem}
+.padding{padding: 0}
+li a:link,li a:active,li a:hover,li a:visited{text-decoration: none}
+li a{color: #999999}
+li a:hover{color:#999999;border-bottom:solid 1px #26a26f}
+footer{
+    background-color: #26a26f;
+    padding: 3% 3% 0;
+    color:white;
+}
+footer p{word-spacing:6rem;}
+footer a:link,footer a:active,footer a:hover,footer a:visited{text-decoration: none}
+footer a{color: white}
+footer a:hover{color:white;border-bottom: solid 1px white}
+.footer-border{
+    border-top: solid 1px #32c086;
+    margin: 1% -5% 0;
+    text-align: center;
+    padding: 1% 0;
+}

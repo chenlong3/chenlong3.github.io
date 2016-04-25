@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0}
+        .flipper-content{
+            width: 400px;
+            margin:10% auto;
+        }
+        .flipper{
+            transition: 2s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .front,.back{
+            width: 400px;
+            height: 500px;
+            backface-visibility: hidden;
+        }
+        .front{
+            background-color: #29bde0;
+        }
+        .back{
+            transform: rotateY(180deg);
+            background-color: #fab344;
+            position: absolute;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+<div class="flipper-content">
+    <div class="flipper">
+        <div class="front">
+            正面
+        </div>
+        <div class="back">
+            背面
+        </div>
+    </div>
+</div>
+<button>开始</button>
+<script src="../dist/js/jquery-2.2.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".flipper").css("transform","rotateY(540deg)")
+        })
+    });
+</script>
+</body>
+</html>
