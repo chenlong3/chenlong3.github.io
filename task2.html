@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="task2.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="whole">
+    <header>
+        参数设置
+        <img src="img/task-2.png" align="left">
+        <img src="img/task-1.png" align="right">
+    </header>
+    <div class="content-top">
+        <div class="content-top-right">
+            玩<br/>家<br/>配<br/>比
+        </div>
+        <div class="content-top-top">
+            <p id="text"></p>
+        </div>
+        <div  onclick="sentIdentity()" class="content-top-bottom">
+            <a href="#">点击设置</a>
+        </div>
+    </div>
+    <div class="content-center">
+        <label><input class="top" type="text" name="phrase" placeholder="幽灵词组"></label>
+        <label><input class="bottom" type="text" name="phrase1" placeholder="水民词组"></label>
+    </div>
+    <div class="content-bottom">
+        <label>
+            玩家人数
+            <input type="text" id="test" value="6"> 人(6-18人)
+        </label>
+        <img src="img/task2-2.png">
+    </div>
+    <div class="button" onclick="btn()">
+        <a href="#">确定</a>
+    </div>
+</div>
+<script src="task2.js" type="text/javascript">
+</script>
+</body>
+</html>

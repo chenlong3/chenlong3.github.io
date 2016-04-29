@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4-3</title>
+    <link type="text/css" rel="stylesheet" href="task4-3.css">
+    <script src="dist/js/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+<div class="whole">
+    <header>
+        <img src="img/task-2.png" align="left">
+        <img src="img/task3-2.png" align="right">
+        法官日记
+    </header>
+    <div class="content" id="content1">
+        <div class="content-title">
+            第一天
+            <img src="img/task4-bottom.png" align="right">
+        </div>
+        <div class="first">
+            <div class="position">
+                <div class="content-top">
+                    <div class="circle"><img src="img/task4-moon.png" align="left"></div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="task4-killer.html">杀手杀人</a></div>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="#">狙击狙人</a></div>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="#">医生救人</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="position">
+                <div class="content-top">
+                    <div class="circle"><img src="img/task4-sun.png" align="left"></div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="#">亡灵发表遗言</a></div>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="#">玩家发言</a></div>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-right-triangle"></div>
+                        <div class="content-right-box"><a href="#">投票</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        var a=sessionStorage.a;
+        var sky=["二","三","四","五","六","七","八","九"];
+        if(a>=2){
+            for(var i=2;i<=(a/2+1);++i){
+                $(".first").css("display","none");
+                var content="<div class='content' id='content"+i+"'><div class='content-title'>第"+sky[i-2]+"天<img src='img/task4-bottom.png' align='right'></div></div>";
+                $(".whole").append(content);
+                $("#content"+(i-1)).children(".first").clone(true).appendTo("#content"+i);
+                $("#content"+i).children(".first").css("display","block");
+            }
+        }
+        $(".content-title").click(function(){
+            $(".position").fadeToggle(2000);
+        })
+    })
+</script>
+</body>
+</html>
