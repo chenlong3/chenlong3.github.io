@@ -43,10 +43,10 @@ var loadXMLDoc=(function()
     }
 })();
 //请求成功执行的函数
-function sss(){
+function win(){
     alert('ok')
 }
 //发送请求
-function a(){
-    loadXMLDoc.http('get','line.json',sss)
+function request(){
+    loadXMLDoc.http('get','line.json',win)
 }
